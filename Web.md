@@ -85,7 +85,7 @@ This challenge is also relatable to cookies
 <br><img width="365" alt="image" src="https://user-images.githubusercontent.com/79892065/158319543-0ce6b9ba-c1df-47a9-a444-b526cf054255.png">
 <br>Checking the cookies we can see an admin cookie
 <br>Changing it to true and save the cookie
-<br>Pressing the "Get Flag" button will result in a flag!
+<br>Pressing the "Get Flag" button will result in a flag
 
 ## 12. SQL Service
 This challenge is going to be relatable to SQL injections
@@ -94,3 +94,4 @@ This challenge is going to be relatable to SQL injections
 <br>Viewing the source in https://skrctf.me/ports/~/login.php?source
 <br><img width="868" alt="image" src="https://user-images.githubusercontent.com/79892065/158320152-990b3713-a4d3-4791-9434-ae1fcac7ac26.png">
 <br>We can create a payload like ``' OR 'x'='x`` to bypass the filter
+<br>Entering the payload into the login page will result in a flag
