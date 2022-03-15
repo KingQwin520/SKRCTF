@@ -50,3 +50,15 @@ We can try registering a username and password and logging into the website with
 <br><img width="878" alt="image" src="https://user-images.githubusercontent.com/79892065/158314195-ddc70321-a6ef-4d1b-a3cf-99913b4d823a.png">
 <br>Seems like we can impersonate as admin!
 <br>Going to the admin's notes we can see the flag
+
+## 8. Secret Url
+
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/79892065/158314544-2a0c7b54-6e17-4473-8dbd-4028f413691d.png">
+<br>Nothing in the source code....
+<br>But according to the content saying "Only Mr. Robots knows where's the flag..." 
+<br>We can know there's something related to robots
+<br>I remember there is a txt file in websites known as robots.txt
+<br><b>A robots.txt file tells search engine crawlers which URLs the crawler can access on your site. This is used mainly to avoid overloading your site with requests</b>
+<br>Going to robots.txt we see something disallowed
+<br><img width="478" alt="image" src="https://user-images.githubusercontent.com/79892065/158315364-e2838fbe-5e2f-4d7f-b500-8f82198000db.png">
+We can access to that specific url and we got the flag!
