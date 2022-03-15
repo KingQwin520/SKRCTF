@@ -164,7 +164,6 @@ Hint: Whai is Blind SQL Injection?
 <br>And since the statement is true it should give out the flag from the "My First SQL" flag but remember <b>THIS IS NOT THE REAL FLAG</b>
 <br><img width="639" alt="image" src="https://user-images.githubusercontent.com/79892065/158352852-5769bf98-65cb-413a-b59c-ed7777cba369.png">
 <br>Remember the flag consists of 11 characters and it's all lower characters
-<br>If you want to keep repeating the process you can try like 
 <br>Ex. if you wanna brute force the second character of the flag
 <br>``godam@kuki.com' and password like 'ka%'-- -->``
 <br>``godam@kuki.com' and password like 'kb%'-- -->``
