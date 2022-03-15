@@ -62,3 +62,35 @@ We can try registering a username and password and logging into the website with
 <br>Going to robots.txt we see something disallowed
 <br><img width="478" alt="image" src="https://user-images.githubusercontent.com/79892065/158315364-e2838fbe-5e2f-4d7f-b500-8f82198000db.png">
 We can access to that specific url and we got the flag!
+
+## 9. Slot Machine
+
+The website shows a program that works like a slot machine.
+<br>Viewing the source code there's a javascript file ``slotEngine.js``
+<br><img width="587" alt="image" src="https://user-images.githubusercontent.com/79892065/158318646-0cce58a6-b556-4d5e-b309-a8b1f931c62b.png">
+<br>Seems like we can try modifying the price to popup the flag
+<br>In the console we can try setting the price value to 1000000000 and just copy paste the above image into the console
+<br><img width="436" alt="image" src="https://user-images.githubusercontent.com/79892065/158318929-038e52bb-7061-4658-9e40-53f3fbc66d98.png">
+<br>Woohoo! We got the flag!
+
+## 10. Kuki Cookies
+This challenge is relatable to cookies so let's check out the cookies!
+<br>I'm using Cookie Editor extension to check the cookies
+<br><img width="369" alt="image" src="https://user-images.githubusercontent.com/79892065/158319173-1a0e5e9c-742a-4d68-b05d-04940fd157a1.png">
+<br>Opening the flag cookie we can view the flag
+<br>The flag is going to be url encoded so use online tools like https://www.urldecoder.org/
+
+## 11. Kuki Cookies 2
+This challenge is also relatable to cookies
+<br><img width="365" alt="image" src="https://user-images.githubusercontent.com/79892065/158319543-0ce6b9ba-c1df-47a9-a444-b526cf054255.png">
+<br>Checking the cookies we can see an admin cookie
+<br>Changing it to true and save the cookie
+<br>Pressing the "Get Flag" button will result in a flag!
+
+## 12. SQL Service
+This challenge is going to be relatable to SQL injections
+<br>The website disables us for singing up so let's try viewing the "Log In" source code
+<br>  We can see a "<!-- Add ?source to show the source! -->" in the source code
+<br>Viewing the source in https://skrctf.me/ports/~/login.php?source
+<br><img width="868" alt="image" src="https://user-images.githubusercontent.com/79892065/158320152-990b3713-a4d3-4791-9434-ae1fcac7ac26.png">
+<br>We can create a payload like ``' OR 'x'='x`` to bypass the filter
