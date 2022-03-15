@@ -154,7 +154,7 @@ Hint: Whai is Blind SQL Injection?
 <br>So let's make a payload that retrieves the password character by character
 <br>``Payload that returns true: Email : godam@kuki.com' and 1=1-- ``
 <br>``Payload that returns false: Email : godam@kuki.com' and 2=1-- ``
-<br><br>So what this payload does is that you assume the first letter of the flag is a and the % represents zero, one, or multiple characters
+<br><br>So what this payload does is that you assume the first letter of the flag is "a" and the % represents zero, one, or multiple characters
 <br>We can try something like ``godam@kuki.com' and password like 'a%'-- -->`` on the username and type random values like 1 on password
 <br>So if a is not the first letter of the flag (aka false statement) it will give the false statement
 <br><img width="527" alt="image" src="https://user-images.githubusercontent.com/79892065/158351805-02c647db-8e29-4a50-9347-30d4c94f3a6f.png">
