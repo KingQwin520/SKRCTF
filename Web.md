@@ -104,7 +104,7 @@ This challenge is going to be relatable to SQL injections
 Hint: I heard PHP got two types of equal symbol: == and === but what's the difference?
 Juggline clowm... hm
 <br>The name seems like it has something to do with type juggling 
-<br>What's type juggline?
+<br>What's type juggling?
 <br>https://medium.com/swlh/php-type-juggling-vulnerabilities-3e28c4ed5c09
 <br>Let's look into the wesite
 <br><img width="316" alt="image" src="https://user-images.githubusercontent.com/79892065/158335998-ba03a882-938e-48a7-b326-10949fc56f25.png"><br>
