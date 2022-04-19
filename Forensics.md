@@ -49,7 +49,7 @@ Based on the title we know that it could be an image and it's corrupted
 <br>So we can modify the headers according to the image 
 <br><img width="949" alt="image" src="https://user-images.githubusercontent.com/79892065/158363311-fef31cb2-54e8-49e8-86d4-00332b0207f2.png">
 <br>Now CTRL-X to save the file
-<br>Rename the file extension ``mv corruptedFile corruptedFile.jpg``
+<br>Rename the file extension ``mv corruptedFile corruptedFile.png``
 <br>Viewing the image would give us a poem and in the poem find out the captial letters and combine them together and you'll get the flag!
 
 ### 7. Shark Of Wire 2
